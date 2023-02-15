@@ -9,16 +9,16 @@ public class Tool : MonoBehaviour
 
     [SerializeField] private GameObject piece;
     [SerializeField] public bool openAndCloseAnimation;
-    [SerializeField] private float closePosition = 29f;
+    [SerializeField] private float closePosition = 0f;
+    [SerializeField] private float openPosition = 0f;
 
     private float endPosition;
     private float currentPossition;
 
     void Start()
     {
-        piece.transform.Rotate(0f, 0f, 0f);
-        endPosition = closePosition;
-        currentPossition = 0f;
+        endPosition = openPosition;
+        currentPossition = closePosition;
     }
 
     void Update()
@@ -32,7 +32,7 @@ public class Tool : MonoBehaviour
             }
             else
             {
-                endPosition = 0;
+                endPosition = closePosition;
             }
 
             if (currentPossition > endPosition)
@@ -42,7 +42,7 @@ public class Tool : MonoBehaviour
             }
             else
             {
-                endPosition = closePosition;
+                endPosition = openPosition;
             }
         }
     }

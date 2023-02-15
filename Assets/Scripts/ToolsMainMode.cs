@@ -19,11 +19,17 @@ public class ToolsMainMode : MonoBehaviour
 
         foreach (ARTrackedImage image in imageManager.trackables)
         {
-            InstantiatePlanet(image);
+            InstantiateTool(image);
         }
+        imageManager.trackedImagesChanged += OnTrackedImageChanged;
     }
 
-    void InstantiatePlanet(ARTrackedImage image)
+    private void OnDisable()
+    {
+        imageManager.trackedImagesChanged -= OnTrackedImageChanged;
+    }
+
+    void InstantiateTool(ARTrackedImage image)
     {
         string name = image.referenceImage.name.Split('-')[0];
         
@@ -35,6 +41,22 @@ public class ToolsMainMode : MonoBehaviour
         else
         {
             Debug.Log($"{name} already instantiated");
+        }
+    }
+
+    void OnTrackedImageChanged(ARTrackedImagesChangedEventArgs eventArgs)
+    {
+        foreach (ARTrackedImage newImage in eventArgs.added)
+        {
+            InstantiateTool(newImage);
+        }
+    }
+
+    private void Update()
+    {
+        if (imageManager.trackables.count == 0)
+        {
+            InteractionController.EnableMode("Scan");
         }
     }
 }
