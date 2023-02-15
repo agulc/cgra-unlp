@@ -1310,9 +1310,39 @@ MonoBehaviour:
   m_GameObject: {fileID: 1120153196}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 549bcd2302e5c4f44829c2cee4f8b652, type: 3}
+  m_Script: {fileID: 11500000, guid: b304f2d4427a4df4cbc50bf251310e18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  toolPrefabs:
+    reorderableList:
+      canAdd: 1
+      canRemove: 1
+      draggable: 1
+      expandable: 1
+      multipleSelection: 1
+      isExpanded: 1
+      label:
+        m_Text: Keys
+        m_Image: {fileID: 0}
+        m_Tooltip: 
+      headerHeight: 18
+      footerHeight: 13
+      slideEasing: 0.15
+      verticalSpacing: 2
+      showDefaultBackground: 1
+      elementDisplayType: 0
+      elementNameProperty: 
+      elementNameOverride: 
+      elementIcon: {fileID: 0}
+    reqReferences: {fileID: 0}
+    isExpanded: 1
+    _keyValues:
+    - Halsted
+    _keys:
+    - Halsted
+    _values:
+    - {fileID: 4543494703996348882, guid: 6699a82042c64ce4d8be33e285b736be, type: 3}
+  imageManager: {fileID: 1788224289}
 --- !u!1 &1197623103
 GameObject:
   m_ObjectHideFlags: 0
@@ -2004,9 +2034,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_SerializedLibrary: {fileID: 11400000, guid: 8f088e96bf145774d8d10e8351746b92,
     type: 2}
-  m_MaxNumberOfMovingImages: 1
-  m_TrackedImagePrefab: {fileID: 4543494703996348882, guid: 6699a82042c64ce4d8be33e285b736be,
-    type: 3}
+  m_MaxNumberOfMovingImages: 0
+  m_TrackedImagePrefab: {fileID: 0}
 --- !u!1 &2052638162
 GameObject:
   m_ObjectHideFlags: 0
