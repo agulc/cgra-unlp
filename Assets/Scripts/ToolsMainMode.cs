@@ -88,9 +88,12 @@ public class ToolsMainMode : MonoBehaviour
             }
             else
             {
-                toolName.text = "";
-                detailsText.text = "";
-                infoButton.interactable = false;
+                if (detailsPanel.activeInHierarchy == false)
+                {
+                    toolName.text = "";
+                    detailsText.text = "";
+                    infoButton.interactable = false;
+                }
             }  
         }
     }
