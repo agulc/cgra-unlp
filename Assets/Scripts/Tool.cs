@@ -5,7 +5,7 @@ using UnityEngine;
 public class Tool : MonoBehaviour
 {
     public string toolName;
-    public string description;
+    public string toolDescription;
 
     [SerializeField] private GameObject piece;
     [SerializeField] public bool openAndCloseAnimation;

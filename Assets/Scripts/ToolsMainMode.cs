@@ -12,7 +12,19 @@ public class ToolsMainMode : MonoBehaviour
 {
     [SerializeField] ToolPrefabDictionary toolPrefabs;
     [SerializeField] ARTrackedImageManager imageManager;
-    // Start is called before the first frame update
+    [SerializeField] TMP_Text toolName;
+    [SerializeField] Toggle infoButton;
+    [SerializeField] GameObject detailsPanel;
+    [SerializeField] TMP_Text detailsText;
+
+    Camera cam;
+    private int layerMask;
+
+    private void Start()
+    {
+        cam = Camera.main;
+        layerMask = 1 << LayerMask.NameToLayer("PlacedObjects");
+    }
     private void OnEnable()
     {
         UIController.ShowUI("Main");
@@ -22,6 +34,10 @@ public class ToolsMainMode : MonoBehaviour
             InstantiateTool(image);
         }
         imageManager.trackedImagesChanged += OnTrackedImageChanged;
+
+        toolName.text = "";
+        infoButton.interactable = false;
+        detailsPanel.SetActive(false);
     }
 
     private void OnDisable()
@@ -57,6 +73,25 @@ public class ToolsMainMode : MonoBehaviour
         if (imageManager.trackables.count == 0)
         {
             InteractionController.EnableMode("Scan");
+        }
+        else
+        {
+            Ray ray = new Ray(cam.transform.position, cam.transform.forward);
+            RaycastHit hit;
+            if (Physics.Raycast(ray, out hit, Mathf.Infinity, layerMask))
+            {
+                Tool tool = hit.collider.GetComponentInParent<Tool>();
+                toolName.text = tool.toolName;
+                detailsText.text = tool.toolDescription;
+                infoButton.interactable = true;
+                
+            }
+            else
+            {
+                toolName.text = "";
+                detailsText.text = "";
+                infoButton.interactable = false;
+            }  
         }
     }
 }
