@@ -10,12 +10,20 @@ using UnityEngine.UI;
 
 public class ToolsMainMode : MonoBehaviour
 {
-    [SerializeField] ToolPrefabDictionary toolPrefabs;
     [SerializeField] ARTrackedImageManager imageManager;
+    [Space]
+    [SerializeField] ToolPrefabDictionary toolPrefabs;
     [SerializeField] TMP_Text toolName;
+    [Space]
     [SerializeField] Toggle infoButton;
+    [SerializeField] TMP_Text infoButtonText;
+    [SerializeField] TMP_Text infoButtonLogo;
+    [Space]
     [SerializeField] GameObject detailsPanel;
     [SerializeField] TMP_Text detailsText;
+    [Space]
+    [SerializeField] Button animationButton;
+    [SerializeField] TMP_Text animationButtonText;
 
     Camera cam;
     private int layerMask;
@@ -37,6 +45,10 @@ public class ToolsMainMode : MonoBehaviour
 
         toolName.text = "";
         infoButton.interactable = false;
+        animationButton.interactable = false;
+        animationButtonText.text = "";
+        infoButtonText.text = "";
+        infoButtonLogo.text = "";
         detailsPanel.SetActive(false);
     }
 
@@ -84,6 +96,13 @@ public class ToolsMainMode : MonoBehaviour
                 toolName.text = tool.toolName;
                 detailsText.text = tool.toolDescription;
                 infoButton.interactable = true;
+                animationButton.interactable = true;
+                infoButtonText.text = "Información";
+                infoButtonLogo.text = "?";
+                if (tool.isOpen)
+                    animationButtonText.text = "Cerrar";
+                else
+                    animationButtonText.text = "Abrir";
                 
             }
             else
@@ -92,9 +111,24 @@ public class ToolsMainMode : MonoBehaviour
                 {
                     toolName.text = "";
                     detailsText.text = "";
+                    animationButtonText.text = "";
+                    infoButtonText.text = "";
+                    infoButtonLogo.text = "";
                     infoButton.interactable = false;
                 }
+                animationButton.interactable = false;
             }  
+        }
+    }
+
+    public void ToggleAnimation()
+    {
+        Ray ray = new Ray(cam.transform.position, cam.transform.forward);
+        RaycastHit hit;
+        if (Physics.Raycast(ray, out hit, Mathf.Infinity, layerMask))
+        {
+            Tool tool = hit.collider.GetComponentInParent<Tool>();
+            tool.isOpen = !tool.isOpen;
         }
     }
 }

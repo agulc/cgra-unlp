@@ -8,41 +8,34 @@ public class Tool : MonoBehaviour
     public string toolDescription;
 
     [SerializeField] private GameObject piece;
-    [SerializeField] public bool openAndCloseAnimation;
+    [SerializeField] public bool isOpen = false;
     [SerializeField] private float closePosition = 0f;
-    [SerializeField] private float openPosition = 0f;
+    [SerializeField] private float openPosition = 42f;
+    [SerializeField] private float animationSpeed = 0.5f;
 
-    private float endPosition;
     private float currentPossition;
 
     void Start()
     {
-        endPosition = openPosition;
         currentPossition = closePosition;
     }
 
     void Update()
     {
-        if (openAndCloseAnimation)
+        if (isOpen)
         {
-            if (currentPossition < endPosition)
+            if (currentPossition < openPosition)
             {
-                currentPossition = currentPossition + 0.5f;
-                piece.transform.Rotate(0f, 0f, 0.5f);
+                currentPossition = currentPossition + animationSpeed;
+                piece.transform.Rotate(0f, 0f, animationSpeed);
             }
-            else
+        }
+        else
+        {
+            if (currentPossition > closePosition)
             {
-                endPosition = closePosition;
-            }
-
-            if (currentPossition > endPosition)
-            {
-                currentPossition = currentPossition - 0.5f;
-                piece.transform.Rotate(0f, 0f, -0.5f);
-            }
-            else
-            {
-                endPosition = openPosition;
+                currentPossition = currentPossition - animationSpeed;
+                piece.transform.Rotate(0f, 0f, -animationSpeed);
             }
         }
     }

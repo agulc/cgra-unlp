@@ -48,9 +48,10 @@ MonoBehaviour:
   toolName: Pinza Halsted Recta
   toolDescription: La mas mejor!!!
   piece: {fileID: 1107758338350321090}
-  openAndCloseAnimation: 1
+  isOpen: 0
   closePosition: 0
   openPosition: 69
+  animationSpeed: 1.38
 --- !u!1001 &2837185006143533654
 PrefabInstance:
   m_ObjectHideFlags: 0

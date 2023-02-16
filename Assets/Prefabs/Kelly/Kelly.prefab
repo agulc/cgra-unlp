@@ -48,9 +48,10 @@ MonoBehaviour:
   toolName: Pinza Kelly Recta
   toolDescription: La mejor!
   piece: {fileID: 7198761176787708159}
-  openAndCloseAnimation: 1
+  isOpen: 0
   closePosition: 0
   openPosition: 69
+  animationSpeed: 1.38
 --- !u!1001 &5469370833408038763
 PrefabInstance:
   m_ObjectHideFlags: 0
