@@ -50,8 +50,8 @@ MonoBehaviour:
   piece: {fileID: 7198761176787708159}
   isOpen: 0
   closePosition: 0
-  openPosition: 69
-  animationSpeed: 1.38
+  openPosition: 70
+  animationSpeed: 2
 --- !u!1001 &5469370833408038763
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -149,6 +149,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 370067788016048891, guid: 29e6ce76398a7274c81f5deab34786d3,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3cd173ae4543f8745ac463237321e8db, type: 2}
     - target: {fileID: 919132149155446097, guid: 29e6ce76398a7274c81f5deab34786d3,
         type: 3}
       propertyPath: m_Name
@@ -159,6 +164,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 1828827992605076116, guid: 29e6ce76398a7274c81f5deab34786d3,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3cd173ae4543f8745ac463237321e8db, type: 2}
     - target: {fileID: 6847794639531817680, guid: 29e6ce76398a7274c81f5deab34786d3,
         type: 3}
       propertyPath: m_LocalRotation.w

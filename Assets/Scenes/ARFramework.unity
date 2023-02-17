@@ -1957,12 +1957,24 @@ MonoBehaviour:
     _keyValues:
     - Halsted
     - Kelly
+    - HalstedCurva
+    - KellyCurva
+    - PinzaDeAnillas
+    - PinzaDeBackhaus
     _keys:
     - Halsted
     - Kelly
+    - HalstedCurva
+    - KellyCurva
+    - PinzaDeAnillas
+    - PinzaDeBackhaus
     _values:
     - {fileID: 4543494703996348882, guid: 6699a82042c64ce4d8be33e285b736be, type: 3}
     - {fileID: 6041294676744622685, guid: 3e66752c9fe26a0429d01588edbf8b15, type: 3}
+    - {fileID: 82565541724014696, guid: e9f3a9f5f6f4c514ba2c19beaffef039, type: 3}
+    - {fileID: 5449275451864210269, guid: ad2dad2ab195d1542a317c69f26bc395, type: 3}
+    - {fileID: 6877845652774060151, guid: d2264536f4df1224881030cfa22e3fa4, type: 3}
+    - {fileID: 6581589882260891007, guid: 4366e9e31de734847baa4499b387cbe8, type: 3}
   toolName: {fileID: 88058464}
   infoButton: {fileID: 1544411219}
   infoButtonText: {fileID: 1588251821}
