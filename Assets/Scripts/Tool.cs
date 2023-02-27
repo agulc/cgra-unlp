@@ -1,11 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class Tool : MonoBehaviour
 {
     public string toolName;
-    public string toolDescription;
+    public TMP_Text toolDescription;
 
     [SerializeField] private GameObject piece;
     [SerializeField] public bool isOpen = false;

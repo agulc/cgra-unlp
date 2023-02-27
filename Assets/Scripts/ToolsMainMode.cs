@@ -101,7 +101,7 @@ public class ToolsMainMode : MonoBehaviour
     private void enableToolInterface(Tool tool)
     {
         toolName.text = tool.toolName;
-        detailsText.text = tool.toolDescription;
+        detailsText.text = tool.toolDescription.text;
         infoButton.interactable = true;
         animationButton.interactable = true;
         infoButtonText.text = "Información";
