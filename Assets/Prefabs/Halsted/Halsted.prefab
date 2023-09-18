@@ -59,6 +59,7 @@ MonoBehaviour:
   closePosition: 0
   openPosition: 70
   animationSpeed: 2
+  videoClip: {fileID: 32900000, guid: 597a63b367f45da4581b00a90e8e223b, type: 3}
 --- !u!23 &7656737452665268886
 MeshRenderer:
   m_ObjectHideFlags: 0
