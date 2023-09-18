@@ -102,6 +102,7 @@ public class ToolsMainMode : MonoBehaviour
     {
         toolName.text = tool.toolName;
         detailsText.text = tool.toolDescription.text;
+        TargetVideo.SetVideoClip(tool.GetToolVideo());
         infoButton.interactable = true;
         animationButton.interactable = true;
         infoButtonText.text = "Información";

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.Video;
 
 public class Tool : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class Tool : MonoBehaviour
     [SerializeField] private float closePosition = 0f;
     [SerializeField] private float openPosition = 42f;
     [SerializeField] private float animationSpeed = 0.5f;
+    [SerializeField] private VideoClip videoClip;
 
     private float currentPossition;
 
@@ -39,5 +41,11 @@ public class Tool : MonoBehaviour
                 piece.transform.Rotate(0f, 0f, -animationSpeed);
             }
         }
+    }
+
+
+    public VideoClip GetToolVideo()
+    {
+        return videoClip;
     }
 }
