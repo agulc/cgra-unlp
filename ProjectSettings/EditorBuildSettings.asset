@@ -17,6 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ARFramework.unity
     guid: 871cef2180bd150449bc595694f3d720
+  - enabled: 1
+    path: Assets/Scenes/VideoScene.unity
+    guid: 89dc9369c982d8c42bdeaff32a433a83
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 9b3e546c68af4dc43b4625e92f0532a1,
       type: 2}
