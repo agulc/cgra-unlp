@@ -59,7 +59,8 @@ MonoBehaviour:
   closePosition: 0
   openPosition: 70
   animationSpeed: 2
-  videoClip: {fileID: 32900000, guid: 99917f21d1f3a5f42babcf7840bd3290, type: 3}
+  videoClip: {fileID: 32900000, guid: efee0edb5ffb35440bc9f538e9ff55f7, type: 3}
+  videoClipURL: 
 --- !u!23 &7695914769453983683
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -122,7 +123,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: "Una pinza de Backhaus, tambi\xE9n conocida como pinza de perforaci\xF3n
+    o pinza de fijaci\xF3n de campo, es una herramienta quir\xFArgica utilizada para
+    asegurar y fijar los campos quir\xFArgicos, como las s\xE1banas o pa\xF1os est\xE9riles,
+    alrededor del \xE1rea de la incisi\xF3n durante una intervenci\xF3n quir\xFArgica.
+    Esta pinza es especialmente \xFAtil para mantener el campo est\xE9ril y prevenir
+    la contaminaci\xF3n."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -185,7 +191,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 63.344463, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0

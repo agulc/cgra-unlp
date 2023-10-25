@@ -156,7 +156,7 @@ RectTransform:
   m_Children:
   - {fileID: 170988182}
   m_Father: {fileID: 1535213409}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
@@ -1953,6 +1953,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb5fafe0361028f4887207c3e06b1154, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  imageManager: {fileID: 0}
 --- !u!114 &1028852401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2660,8 +2661,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 88058463}
-  - {fileID: 1544411218}
   - {fileID: 11821813}
+  - {fileID: 1544411218}
   m_Father: {fileID: 487332223}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2742,7 +2743,7 @@ RectTransform:
   - {fileID: 1588251820}
   - {fileID: 1496316792}
   m_Father: {fileID: 1535213409}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
@@ -3040,7 +3041,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: CGAR
+  m_text: CGRA
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}

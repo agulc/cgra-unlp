@@ -59,6 +59,8 @@ MonoBehaviour:
   closePosition: 0
   openPosition: 70
   animationSpeed: 2
+  videoClip: {fileID: 32900000, guid: a069c5126515d814981baeb049797022, type: 3}
+  videoClipURL: 
 --- !u!23 &8174743347068336536
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -121,7 +123,24 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: "La pinza hemost\xE1tica Kelly es una herramienta quir\xFArgica ampliamente
+    utilizada en cirug\xEDas para controlar el sangrado al oprimir los vasos sangu\xEDneos
+    o tejidos. Esta pinza lleva el nombre del cirujano estadounidense Howard Atwood
+    Kelly, quien contribuy\xF3 significativamente a la cirug\xEDa a principios del
+    siglo XX. La pinza Kelly tiene una estructura caracter\xEDstica que la hace f\xE1cilmente
+    reconocible.\r\n\r\nLa pinza hemost\xE1tica Kelly tiene mand\xEDbulas rectas
+    y estriadas en sus extremos, lo que permite un agarre firme de los tejidos sin
+    causar da\xF1o. A menudo, las mand\xEDbulas tienen una longitud de aproximadamente
+    14 a 16 cent\xEDmetros, pero est\xE1n disponibles en varios tama\xF1os para adaptarse
+    a diferentes procedimientos quir\xFArgicos. Las asas son alargadas y cuentan
+    con un mecanismo de trinquete que permite mantener la presi\xF3n sobre los tejidos
+    de manera constante.\r\n\r\nEsta pinza se utiliza com\xFAnmente en cirug\xEDas
+    generales y se caracteriza por su versatilidad. Puede utilizarse para sujetar
+    tejidos, arterias peque\xF1as o vasos sangu\xEDneos durante la cirug\xEDa, lo
+    que la convierte en una herramienta esencial para detener el sangrado y mantener
+    un campo quir\xFArgico limpio y controlado. La pinza Kelly es una de las pinzas
+    hemost\xE1ticas m\xE1s comunes y apreciadas en la pr\xE1ctica quir\xFArgica debido
+    a su dise\xF1o efectivo y su facilidad de uso."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -184,7 +203,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 143.13057, z: 0, w: -0.57946205}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0

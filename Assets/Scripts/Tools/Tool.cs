@@ -15,6 +15,7 @@ public class Tool : MonoBehaviour
     [SerializeField] private float openPosition = 42f;
     [SerializeField] private float animationSpeed = 0.5f;
     [SerializeField] private VideoClip videoClip;
+    [SerializeField] private string videoClipURL;
 
     private float currentPossition;
 
@@ -47,5 +48,10 @@ public class Tool : MonoBehaviour
     public VideoClip GetToolVideo()
     {
         return videoClip;
+    }
+
+    public string GetToolVideoURL()
+    {
+        return videoClipURL;
     }
 }

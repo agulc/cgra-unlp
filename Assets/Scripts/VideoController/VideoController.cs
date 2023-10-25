@@ -17,7 +17,11 @@ public class VideoController : MonoBehaviour
 
     private void Awake()
     {
-        videoPlayer.clip = TargetVideo.GetVideoClip();
+        if (TargetVideo.GetVideoClip())
+            videoPlayer.clip = TargetVideo.GetVideoClip();
+        else
+            videoPlayer.url = TargetVideo.GetVideoClipURL();
+
         step = framerate * seconds;
     }
 

@@ -59,6 +59,8 @@ MonoBehaviour:
   closePosition: 0
   openPosition: 70
   animationSpeed: 2
+  videoClip: {fileID: 32900000, guid: feb31c887319fbd4d88431f57f64fb09, type: 3}
+  videoClipURL: 
 --- !u!23 &7198029133828599688
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -121,7 +123,21 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: "La pinza hemost\xE1tica Halsted curva es una herramienta esencial en la
+    cirug\xEDa, dise\xF1ada para controlar el sangrado al oprimir los vasos sangu\xEDneos
+    durante procedimientos quir\xFArgicos. Su nombre proviene del eminente cirujano
+    William Halsted, quien contribuy\xF3 significativamente a su desarrollo en el
+    siglo XIX. Esta pinza se caracteriza por su forma curva, que permite un acceso
+    m\xE1s c\xF3modo a \xE1reas dif\xEDciles de alcanzar en el campo quir\xFArgico.\r\n\r\nLa
+    pinza Halsted curva consta de dos mand\xEDbulas con estr\xEDas transversales
+    en sus extremos, lo que proporciona una sujeci\xF3n firme y segura de los tejidos
+    sin da\xF1arlos. Sus asas son alargadas y cuentan con una traba de bloqueo que
+    mantiene la presi\xF3n constante durante el procedimiento. Adem\xE1s, est\xE1
+    disponible en diferentes tama\xF1os para adaptarse a diversas necesidades quir\xFArgicas.\r\n\r\nEn
+    resumen, la pinza hemost\xE1tica Halsted curva es una herramienta esencial para
+    detener el sangrado durante la cirug\xEDa, gracias a su dise\xF1o ergon\xF3mico
+    y su capacidad de agarre preciso en \xE1reas delicadas, lo que la convierte en
+    un instrumento fundamental en el arsenal de cualquier cirujano."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -184,7 +200,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 151.29205, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0

@@ -5,6 +5,7 @@ using RotaryHeart.Lib.SerializableDictionary;
 using UnityEngine.XR.ARFoundation;
 using TMPro;
 using UnityEngine.UI;
+using System;
 
 [System.Serializable] public class ToolPrefabDictionary : SerializableDictionaryBase<string, GameObject> { }
 
@@ -72,7 +73,14 @@ public class ToolsMainMode : MonoBehaviour
         foreach (ARTrackedImage newImage in eventArgs.added)
         {
             InstantiateTool(newImage);
+            if (newImage.trackingState < UnityEngine.XR.ARSubsystems.TrackingState.Tracking)
+                killTool(newImage);
         }
+    }
+
+    private void killTool(ARTrackedImage removedImage)
+    {
+        Destroy(removedImage.transform.GetChild(0));
     }
 
     private void Update()
@@ -94,7 +102,13 @@ public class ToolsMainMode : MonoBehaviour
             else
             {
                 disableToolInterface();
-            }  
+            }
+
+            foreach (ARTrackedImage updatedImage in imageManager.trackables)
+            {
+                if (updatedImage.trackingState < UnityEngine.XR.ARSubsystems.TrackingState.Tracking)
+                    killTool(updatedImage);
+            }
         }
     }
 
@@ -103,6 +117,7 @@ public class ToolsMainMode : MonoBehaviour
         toolName.text = tool.toolName;
         detailsText.text = tool.toolDescription.text;
         TargetVideo.SetVideoClip(tool.GetToolVideo());
+        TargetVideo.SetVideoClipURL(tool.GetToolVideoURL());
         infoButton.interactable = true;
         animationButton.interactable = true;
         infoButtonText.text = "Información";
@@ -117,7 +132,7 @@ public class ToolsMainMode : MonoBehaviour
     {
         if (detailsPanel.activeInHierarchy == false)
         {
-            toolName.text = "";
+            toolName.text = imageManager.trackables.count.ToString() ;
             detailsText.text = "";
             infoButtonText.text = "";
             infoButtonLogo.text = "";

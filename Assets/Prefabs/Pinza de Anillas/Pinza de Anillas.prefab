@@ -59,6 +59,8 @@ MonoBehaviour:
   closePosition: 0
   openPosition: 70
   animationSpeed: 2
+  videoClip: {fileID: 32900000, guid: ca022230cb0006a4f928057bcafdfe98, type: 3}
+  videoClipURL: 
 --- !u!23 &1115901053124902676
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -121,7 +123,14 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: "Las pinzas Foerster tienen la particularidad de llamarse tambi\xE9n pinzas
+    de aro, ya que precisamente en el extremo de sus mand\xEDbulas en lugar de tener
+    puntas lisas o con dientes, est\xE1n compuestas en cada extremo por unos aros
+    que cumplen la funci\xF3n de sujetar muy bien cualquier material quir\xFArgico
+    como lo puede ser una gasa. Estos aros no son traum\xE1ticos y sirven para comprimir,
+    sujetar o dirigir cualquier punto en cuesti\xF3n dentro de una operaci\xF3n quir\xFArgica.
+    Adem\xE1s, gracias a su cremallera permite ajustarla con mayor grado de precisi\xF3n
+    en su punta."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -184,7 +193,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 46.168945, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0
